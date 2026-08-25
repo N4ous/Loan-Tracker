@@ -23,13 +23,15 @@ jobs:
           channel: 'stable'
 
       - name: Install dependencies
+        working-directory: ./YOUR_FOLDER_NAME
         run: flutter pub get
 
       - name: Build APK
+        working-directory: ./YOUR_FOLDER_NAME
         run: flutter build apk --release
 
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
         with:
           name: app-release
-          path: build/app/outputs/flutter-apk/app-release.apk
+          path: YOUR_FOLDER_NAME/build/app/outputs/flutter-apk/app-release.apk
