@@ -27,7 +27,7 @@ jobs:
         run: flutter pub get
 
       - name: Build APK
-        working-directory: ./YOUR_FOLDER_NAME
+        working-directory: ./pubspec.yaml
         run: flutter build apk --release
 
       - name: Upload APK Artifact
