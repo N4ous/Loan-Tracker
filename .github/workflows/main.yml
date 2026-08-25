@@ -23,11 +23,11 @@ jobs:
           channel: 'stable'
 
       - name: Install dependencies
-        working-directory: ./.github/workflows/main.yml
+        working-directory: .github/workflows/main.yml
         run: flutter pub get
 
       - name: Build APK
-        working-directory: ./.github/workflows/main.yml
+        working-directory: .github/workflows/main.yml
         run: flutter build apk --release
 
       - name: Upload APK Artifact
