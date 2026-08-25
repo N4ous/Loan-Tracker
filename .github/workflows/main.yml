@@ -23,7 +23,7 @@ jobs:
           channel: 'stable'
 
       - name: Install dependencies
-        working-directory: ./YOUR_FOLDER_NAME
+        working-directory: ./pubspec.yaml
         run: flutter pub get
 
       - name: Build APK
