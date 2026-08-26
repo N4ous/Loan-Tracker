@@ -1,3 +1,8 @@
+@file:OptIn(androidx.compose.material3.ExperimentalMaterial3Api::class)
+package com.aj.loantracker
+
+import android.os.Bundle
+...
 package com.aj.loantracker
 
 import android.content.Context
